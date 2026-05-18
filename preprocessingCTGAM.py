@@ -189,7 +189,7 @@ def salva_e_stampa_smote(X_res, y_res, output_file="Data_SMOTE.xlsx"):
 
 def prepare_data_for_models ():
     # 1. Caricamento
-    df = pd.read_excel("C:/Users/dista/Desktop/aiuto/Data.xlsx")
+    df = pd.read_excel("Data.xlsx")
     # 2. Pulizia
     df.replace("?", pd.NA, inplace=True)
     df = df.drop(columns=['Patient ID #', 'Sample ID #', 'CancerSEEK Logistic Regression Score',
